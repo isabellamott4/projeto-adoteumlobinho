@@ -6,7 +6,6 @@
 body {
   font-family: Darker Grotesque;
 }
-
 /* -------------- HEADER --------------- */
 
 header {
@@ -44,9 +43,229 @@ header img {
   text-decoration: underline;
 }
 
+/* -------------- MAIN --------------- */
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 11.25rem;
+  padding-right: 11.4375rem;
+}
+
+.busca-lobinho {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 2.5625rem;
+
+  gap: 1.25rem;
+  padding-top: 2rem;
+}
+
+.busca-lobinho input {
+  width: 100%;
+  height: 2.9375rem;
+  border: solid 1px #333333;
+  background-image: url(../img/lupa-patinha.png);
+  background-repeat: no-repeat;
+  background-position: 0.6rem center;
+}
+
+.busca-lobinho button {
+  width: 8.125rem;
+  height: 2.9375rem;
+  font-weight: 600;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #deb959;
+  border: none;
+  cursor: pointer;
+}
+
+.busca-lobinho button p {
+  font-size: 28px;
+  font-family: Darker Grotesque;
+  color: #ffffff;
+  align-items: center;
+}
+
+.check-lobos-adotados {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.4rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2.5625rem;
+}
+
+.check-lobos-adotados input {
+  width: 20px;
+  height: 20px;
+  border: solid 1px #333333;
+  border-radius: 5px;
+}
+
+.check-lobos-adotados p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+
+.card-lobinho-lado-esquerdo {
+  display: flex;
+  flex-direction: row;
+  gap: 5.6875rem;
+}
+
+.lobinho-img-esquerdo {
+  position: relative;
+  /* width: 27rem;
+  height: 20.5rem; */
+}
+
+.lobinho-img-esquerdo .img-azul,
+.lobinho-img-esquerdo .img-principal-esquerdo,
+.lobinho-img-direito .img-azul,
+.lobinho-img-direito .img-principal-direito {
+  width: 25rem;
+  height: 17rem;
+}
+
+.img-principal-esquerdo {
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem;
+  z-index: 1;
+}
+
+.conteudo-lobinho {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.conteudo-lobinho p {
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.header-card-lobinho-lado-esquerdo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-card-lobinho-lado-esquerdo button {
+  width: 9.8rem;
+  height: 2.87rem;
+  background-color: #deb959;
+  border: none;
+  cursor: pointer;
+}
+
+.header-card-lobinho-lado-esquerdo button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.info-lobinho h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.info-lobinho p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.card-lobinho-lado-direito {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5.6875rem;
+}
+
+.lobinho-img-direito {
+  position: relative;
+  width: 27rem;
+  height: 20.5rem;
+}
+
+.img-principal-direito {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  z-index: 1;
+}
+
+.card-lobinho-lado-direito .conteudo-lobinho p {
+  text-align: right;
+}
+
+.header-card-lobinho-lado-direito {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-card-lobinho-lado-direito button {
+  width: 9.8rem;
+  height: 2.87rem;
+  background-color: #deb959;
+  border: none;
+  cursor: pointer;
+}
+
+.header-card-lobinho-lado-direito button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.paginas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  height: 100%;
+  margin-top: 4.9375rem;
+}
+
+.paginas a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #deb959;
+}
+
 /* -------------- FOOTER --------------- */
 
 footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.6875rem;
+}
+
+.gradiente-footer {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(270deg, #2c5680 0%, #deb959 100%);
+}
+
+.footer {
   display: flex;
   flex-direction: row;
   align-items: center;
