@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Darker Grotesque;
+}
+
+/* -------------- HEADER --------------- */
+
+header {
+  background-color: #85cdf5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 95.55px;
+  height: 110.72px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* -------------- FOOTER --------------- */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  height: 16.875rem;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.infosRodape {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.texto-rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.dadosRodape {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.local {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+
+.local img {
+  padding: 0.5rem;
+}
+
+.telefone {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+
+.telefone img {
+  padding: 0.5rem;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+
+.email img {
+  padding: 0.5rem;
+}
+
+.botaoQuemSomos button {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: none;
+  font-family: Darker Grotesque;
+  background-color: #deb959;
+  font-weight: 700;
+  font-size: 25px;
+}
