@@ -1,0 +1,161 @@
+* {
+    font-family: "Darker Grotesque", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*================HEADER=====================*/
+header {
+    background-color: #85cdf5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 95.55px;
+    height: 110.72px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+/*====================MAIN=======================*/
+
+.quem-somos {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quem-somos h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.descricao {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.linha-gradiente {
+  height: 5px;
+  background: linear-gradient(to right, #DEB959,#2C5680);
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 3px;
+}
+
+
+
+/*=========================FOOTER===================*/
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 40px 60px;
+}
+
+.infosRodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.mapa {
+    border-radius: 5px;
+    width: 250px;
+    height: 168px;
+}
+
+.dadosRodape {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.dadosRodape div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dadosRodape img {
+    width: 20px;
+    height: 20px;
+}
+
+.botaoQuemSomos {
+    display: flex;
+    align-items: left;
+}
+
+.btn {
+    background-color: #DEB959;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.btn:hover {
+    text-decoration: underline;
+    background-color: #DEB959;
+    cursor: pointer;
+}
+
+.assinatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.textoPata {
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    margin: 0;
+    margin-top: auto;
+}
+
+.pata {
+    width: 100px;
+    margin-top: 5px;
+    align-self: flex-end;
+}
