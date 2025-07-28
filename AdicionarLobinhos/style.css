@@ -43,6 +43,55 @@ header img {
 
 /*==============MAIN=================*/
 
+main {
+  width: 100%;
+  height: 1036px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 958px;
+  height: 874px;
+  top: 180px;
+  left: 221px;
+  background-color: white;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+form h1 {
+  text-align: center;
+  padding: 54px 72px 72px 60px;
+}
+
+.nomeEidade {
+  width: 744px;
+  height: 87px;
+  top: 382px;
+  left: 319px;
+  display: flex;
+  gap: 20px;
+}
+
+.nome {
+  width: 564px;
+  height: 87px;
+  top: 382px;
+  left: 319px;
+  display: flex;
+  flex-direction: column;
+}
+
+.anos {
+  width: 177.13px;
+  height: 87px;
+  top: 382px;
+  left: 903px;
+  flex-direction: column;
+}
+
 
 
 /*==============FOOTER=================*/
