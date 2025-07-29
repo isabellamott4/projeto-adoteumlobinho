@@ -54,8 +54,6 @@ main {
 form {
   width: 958px;
   height: 874px;
-  top: 180px;
-  left: 221px;
   background-color: white;
   border: 2px solid black;
   box-sizing: border-box;
@@ -63,35 +61,98 @@ form {
 
 form h1 {
   text-align: center;
-  padding: 54px 72px 72px 60px;
+  font-size: 42px;
+  padding: 70px 0;
 }
 
 .nomeEidade {
   width: 744px;
   height: 87px;
-  top: 382px;
-  left: 319px;
   display: flex;
   gap: 20px;
+  align-items: center;
+  margin: 0 auto; 
 }
+
 
 .nome {
   width: 564px;
   height: 87px;
-  top: 382px;
-  left: 319px;
   display: flex;
   flex-direction: column;
+  
+}
+
+.nome input{
+  height: 35px;
+  margin-top: 6px;
+  background: rgba(230, 230, 230, 1);
+  border: 1px solid #ccc;
+  border-color: #000;
+}
+
+.anos input {
+  height: 35px;
+  margin-top: 6px;
+  background: rgba(230, 230, 230, 1);
+  border: 1px solid #ccc;
+  border-color: #000;
 }
 
 .anos {
   width: 177.13px;
   height: 87px;
-  top: 382px;
-  left: 903px;
   flex-direction: column;
 }
 
+.fotoEdescricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+
+
+.fotoEdescricao .campo {
+  width: 744px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fotoEdescricao label {
+  margin-bottom: 6px; 
+}
+
+#foto {
+  width: 744px;
+  height: 35px;
+  margin-bottom: 12px;
+  background: rgba(230, 230, 230, 1);
+  border: 1px solid #ccc;
+  border-color: #000;
+}
+
+#descricao {
+  width: 744px;
+  margin-bottom: 50px;
+  background: rgba(230, 230, 230, 1);
+  border: 1px solid #ccc;
+  border-color: #000;
+}
+
+.botao button {
+  width: 209px;      
+  height: 60px;      
+  font-size: 16px;   
+  display: block;     
+  margin: 0 auto; 
+  border: 1px solid #ccc;
+  color: white;    
+  background-color: rgba(44, 86, 128, 1);
+}
 
 
 /*==============FOOTER=================*/
