@@ -161,6 +161,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 6rem;
 }
 
 .header-card-lobinho-lado-esquerdo button {
@@ -216,6 +217,7 @@ main {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  gap: 6rem;
 }
 
 .header-card-lobinho-lado-direito button {
@@ -233,7 +235,15 @@ main {
   font-weight: 500;
 }
 
-.paginas {
+.header-card-lobinho-lado-esquerdo button.adotado,
+.header-card-lobinho-lado-direito button.adotado {
+  background-color: #7aac3a;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: not-allowed;
+}
+.paginacao {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -243,12 +253,33 @@ main {
   margin-top: 4.9375rem;
 }
 
+.pagina-anterior,
+.proxima-pagina {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.paginas {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
 .paginas a {
   text-decoration: none;
   color: #000000;
   font-size: 18px;
   font-weight: 400;
+  cursor: pointer;
+}
+
+.ativo {
   background-color: #deb959;
+  width: 18px;
+  text-align: center;
 }
 
 /* -------------- FOOTER --------------- */
@@ -342,7 +373,9 @@ footer {
   padding: 0.5rem;
 }
 
-.botaoQuemSomos button {
+.botaoQuemSomos a {
+  text-decoration: none;
+  color: #353535;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border: none;
@@ -350,4 +383,5 @@ footer {
   background-color: #deb959;
   font-weight: 700;
   font-size: 25px;
+  cursor: pointer;
 }
