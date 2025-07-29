@@ -1,0 +1,207 @@
+* {
+    font-family: "Darker Grotesque", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=============HEADER==================*/
+header {
+  background-color: #85cdf5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 95.55px;
+  height: 110.72px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+} 
+
+/*==============MAIN=================*/
+
+main{
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    #nome-lobo {
+      height: 42px;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 3%;
+    }
+
+    .lobo-ShowLobinho {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .imagemEdesign {
+      position: relative;
+      width: 430px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .parteDeTrasImg {
+      position: absolute;
+      width: 430px;
+      height: 328px;
+      background: rgba(44, 86, 128, 1);
+      top: -20px;
+      left: -20px;
+      z-index: 0;
+      border: 4px solid rgba(51, 51, 51, 1);
+    }
+
+    #fotoLobo {
+      position: relative;
+      width: 430px;
+      height: 328px;
+      border: 1px solid #000000;
+    }
+
+    .texto {
+      width: 478px;
+      height: 497px;
+      text-align: justify;
+    }
+
+    .botoes {
+      display: flex;
+      gap: 70px;
+      margin-top: 10px;
+    }
+
+    #botaoAdotar {
+      width: 180px;
+      height: 56px;
+      border: none;
+      color: white;
+      background: rgba(122, 172, 58, 1);
+
+    }
+
+    #botaoExcluir {
+      width: 180px;
+      height: 56px;
+      border: none;
+      color: white;
+      background: rgba(222, 89, 89, 1);
+    }
+
+/*==============FOOTER=================*/
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 40px 60px;
+}
+
+.infosRodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.mapa {
+    border-radius: 5px;
+    width: 250px;
+    height: 168px;
+}
+
+.dadosRodape {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.dadosRodape div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dadosRodape img {
+    width: 20px;
+    height: 20px;
+}
+
+.botaoQuemSomos {
+    display: flex;
+    align-items: left;
+}
+.btn {
+  background-color: #DEB959;
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+.btn:hover {
+  text-decoration: underline;
+  background-color: #DEB959; 
+  cursor: pointer;
+}
+.assinatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.textoPata {
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    margin: 0;
+    margin-top: auto;
+}
+
+.pata {
+    width: 100px;
+    margin-top: 5px;
+    align-self: flex-end;
+}

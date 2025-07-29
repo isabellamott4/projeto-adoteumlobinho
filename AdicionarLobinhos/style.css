@@ -1,0 +1,238 @@
+* {
+    font-family: "Darker Grotesque", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=============HEADER==================*/
+header {
+  background-color: #85cdf5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 95.55px;
+  height: 110.72px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+} 
+
+/*==============MAIN=================*/
+
+main {
+  width: 100%;
+  height: 1036px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 958px;
+  height: 874px;
+  background-color: white;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 42px;
+  padding: 70px 0;
+}
+
+.nomeEidade {
+  width: 744px;
+  height: 87px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0 auto; 
+}
+
+
+.nome {
+  width: 564px;
+  height: 87px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.nome input{
+  height: 35px;
+  margin-top: 6px;
+  background: rgba(230, 230, 230, 1);
+  border: 1px solid #ccc;
+  border-color: #000;
+}
+
+.anos input {
+  height: 35px;
+  margin-top: 6px;
+  background: rgba(230, 230, 230, 1);
+  border: 1px solid #ccc;
+  border-color: #000;
+}
+
+.anos {
+  width: 177.13px;
+  height: 87px;
+  flex-direction: column;
+}
+
+.fotoEdescricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+
+
+.fotoEdescricao .campo {
+  width: 744px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fotoEdescricao label {
+  margin-bottom: 6px; 
+}
+
+#foto {
+  width: 744px;
+  height: 35px;
+  margin-bottom: 12px;
+  background: rgba(230, 230, 230, 1);
+  border: 1px solid #ccc;
+  border-color: #000;
+}
+
+#descricao {
+  width: 744px;
+  margin-bottom: 50px;
+  background: rgba(230, 230, 230, 1);
+  border: 1px solid #ccc;
+  border-color: #000;
+}
+
+.botao button {
+  width: 209px;      
+  height: 60px;      
+  font-size: 16px;   
+  display: block;     
+  margin: 0 auto; 
+  border: 1px solid #ccc;
+  color: white;    
+  background-color: rgba(44, 86, 128, 1);
+}
+
+
+/*==============FOOTER=================*/
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 40px 60px;
+}
+
+.infosRodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.mapa {
+    border-radius: 5px;
+    width: 250px;
+    height: 168px;
+}
+
+.dadosRodape {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.dadosRodape div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dadosRodape img {
+    width: 20px;
+    height: 20px;
+}
+
+.botaoQuemSomos {
+    display: flex;
+    align-items: left;
+}
+.btn {
+  background-color: #DEB959;
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+.btn:hover {
+  text-decoration: underline;
+  background-color: #DEB959; 
+  cursor: pointer;
+}
+.assinatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.textoPata {
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    margin: 0;
+    margin-top: auto;
+}
+
+.pata {
+    width: 100px;
+    margin-top: 5px;
+    align-self: flex-end;
+}
