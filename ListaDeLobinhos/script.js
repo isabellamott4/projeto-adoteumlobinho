@@ -7,6 +7,7 @@ const paginas = document.querySelector(".paginas");
 const totalPaginas = Math.ceil(lobos.length / cardsPorPagina);
 const maxBotoesPaginacao = 5;
 let mostrarAdotados = false;
+let filtroNome = "";
 
 const html = {
   get(elemento) {
@@ -15,16 +16,22 @@ const html = {
 };
 
 function getLobosFiltrados() {
+  let resultado = lobos;
   if (mostrarAdotados) {
-    return lobos.filter((lobo) => lobo.adotado === true);
+    resultado = resultado.filter((lobo) => lobo.adotado === true);
   }
-  return lobos;
+  if (filtroNome.trim() !== "") {
+    resultado = resultado.filter((lobo) =>
+      lobo.nome.toLowerCase().includes(filtroNome.trim().toLowerCase())
+    );
+  }
+  return resultado;
 }
 
 function criarCardLobinho(lobo, lado) {
   const botaoAdotado = lobo.adotado
     ? `<button class="adotado" disabled>Adotado</button>`
-    : `<button><a href="../AdotarLobinho/adotarlobinho.html">Adotar</a></button>`;
+    : `<button><a href="../ShowLobinho/showLobinho.html">Adotar</a></button>`;
   return `<div class="card-lobinho-lado-${lado}">
           <div class="lobinho-img-${lado}">
             <img class="img-azul" src="../img/quadradoazul.png" alt="" />
@@ -168,6 +175,17 @@ document.addEventListener("DOMContentLoaded", () => {
   botoes.atualizar();
   lista.atualizar();
   controlesPaginacao.criarEvento();
+
+  const inputBusca = document.querySelector(
+    '.busca-lobinho input[type="text"]'
+  );
+  inputBusca.addEventListener("input", function () {
+    filtroNome = this.value;
+    paginaAtual = 1;
+    botoes.atualizar();
+    lista.atualizar();
+  });
+
   const checkbox = document.querySelector(
     '.check-lobos-adotados input[type="checkbox"]'
   );
