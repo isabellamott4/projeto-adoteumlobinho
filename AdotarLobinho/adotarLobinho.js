@@ -1,4 +1,4 @@
-let lobinhos = JSON.parse(localStorage.getItem('lobinhos'));
+let lobinhos = JSON.parse(localStorage.getItem('lobos'));
 
 const idLoboAtual = document.getElementById("idLobo").textContent.replace("ID: ", "").trim();
 
