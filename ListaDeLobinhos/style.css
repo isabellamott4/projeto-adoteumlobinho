@@ -58,7 +58,6 @@ main {
   flex-direction: row;
   justify-content: center;
   padding-left: 2.5625rem;
-
   gap: 1.25rem;
   padding-top: 2rem;
 }
@@ -136,8 +135,6 @@ main {
 
 .lobinho-img-esquerdo {
   position: relative;
-  /* width: 27rem;
-  height: 20.5rem; */
 }
 
 .lobinho-img-esquerdo .img-azul,
@@ -354,7 +351,6 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-
   align-items: center;
   font-weight: 400;
   font-size: 18px;
@@ -393,4 +389,9 @@ footer {
   font-weight: 700;
   font-size: 25px;
   cursor: pointer;
+}
+
+.info-desenvolvido {
+  display: flex;
+  flex-direction: column;
 }

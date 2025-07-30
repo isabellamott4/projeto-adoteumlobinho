@@ -1,5 +1,4 @@
 let lobos = JSON.parse(localStorage.getItem("lobos"));
-console.log(lobos);
 
 const cardsPorPagina = 4;
 let paginaAtual = 1;
@@ -160,16 +159,6 @@ const botoes = {
     return { numerosAEsquerda, numerosADireita };
   },
 };
-
-function renderizarPaginacao() {
-  //   const proximaPagina = () => {
-  //     paginaAtual++;
-  //     const ultimaPagina = paginaAtual > totalPaginas;
-  //     if (ultimaPagina) {
-  //       paginaAtual--;
-  //     }
-  //   };
-}
 
 document.addEventListener("DOMContentLoaded", () => {
   botoes.atualizar();
