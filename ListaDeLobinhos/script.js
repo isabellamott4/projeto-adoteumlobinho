@@ -30,7 +30,7 @@ function getLobosFiltrados() {
 function criarCardLobinho(lobo, lado) {
   const botaoAdotado = lobo.adotado
     ? `<button class="adotado" disabled>Adotado</button>`
-    : `<button><a href="../ShowLobinho/showLobinho.html">Adotar</a></button>`;
+    : `<button><a href="../ShowLobinho/showLobinho.html?id=${lobo.id}">Adotar</a></button>`;
   return `<div class="card-lobinho-lado-${lado}">
           <div class="lobinho-img-${lado}">
             <img class="img-azul" src="../img/quadradoazul.png" alt="" />

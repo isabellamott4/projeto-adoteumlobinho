@@ -5,7 +5,7 @@ function getParamFromURL(param) {
 }
 
 const idLobo = getParamFromURL("id");
-const lobinhos = JSON.parse(localStorage.getItem("lobinhos")) || [];
+const lobinhos = JSON.parse(localStorage.getItem("lobos")) || [];
 const lobo = lobinhos.find(l => l.id === idLobo);
 
 if (lobo) {
